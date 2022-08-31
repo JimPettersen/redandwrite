@@ -8,15 +8,15 @@ namespace Lib
 {
 
 	
-
+	//template print function
 	template <typename T>
 	void print(T t)
 	{
 		std::cout << t << "\n";
 	}
 
-
-	void WriteTOFile(std::string filepath) 
+	//Writes to textfile
+	void WriteToFile(std::string filepath) 
 	{
 
 		std::ofstream file(filepath);
@@ -37,5 +37,5 @@ namespace Lib
 int main()
 {
 	Lib::print("hej");
-	Lib::WriteTOFile(Lib::filepath1);
+	Lib::WriteToFile(Lib::filepath1);
 }
